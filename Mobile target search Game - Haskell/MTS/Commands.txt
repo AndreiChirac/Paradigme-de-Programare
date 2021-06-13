@@ -1,0 +1,82 @@
+TestBehave3
+
+game = emptyGame 5 7
+game1 = addObstacle (1,2) game
+game2 = addObstacle (2,2) game1
+game3 = addObstacle (3,2) game2
+game4 = addObstacle (1,4) game3
+game5 = addObstacle (2,4) game4
+game6 = addObstacle (3,4) game5
+game7 = addGateway ((3,3),(3,5)) game6
+game8 = addTarget goSouth (1,5) game7
+game9 = moveTargets game8
+game10 = moveTargets game9
+show (gameBoard game10 !!3 !!3)
+
+TestBehave4
+
+game = emptyGame 9 10
+game1 = addObstacle (4,1) game
+game2 = addObstacle (4,2) game1
+game3 = addObstacle (4,3) game2
+game4 = addObstacle (4,4) game3
+game5 = addObstacle (4,5) game4
+game6 = addObstacle (4,6) game5
+game7 = addObstacle (4,7) game6
+game8 = addObstacle (4,8) game7
+game9 = addObstacle (4,9) game8
+
+
+TestBehave5
+game = emptyGame 9 11
+game1 = addObstacle (4,1) game
+game2 = addObstacle (4,2) game1
+game3 = addObstacle (4,3) game2
+game4 = addObstacle (4,5) game3
+game5 = addObstacle (4,7) game4
+game6 = addObstacle (4,8) game5
+game7 = addObstacle (4,9) game6
+game8 = addObstacle (3,5) game7
+game9 = addObstacle (2,5) game8
+game10 = addObstacle (5,5) game9
+game11 = addObstacle (6,5) game10
+game12 = addObstacle (7,5) game11
+game13 = addObstacle (8,5) game12
+game14 = addHunter (7,1) game13
+game15 = addTarget goNorth (7,6) game14
+game16 = addGateway ((3,1),(5,9)) game15
+game17 = addTarget goSouth (1,9) game16
+
+@@@@@@@@@@@
+@         @
+@    @*  *@
+@#   @    @
+@@@@ @ @@@@
+@    @   #@
+@    @    @
+@!   @    @
+@@@@@@@@@@@
+
+game = emptyGame 9 11
+game1 = addObstacle (4,1) game
+game2 = addObstacle (4,2) game1
+game3 = addObstacle (4,3) game2
+game4 = addObstacle (4,5) game3
+game5 = addObstacle (4,7) game4
+game6 = addObstacle (4,8) game5
+game7 = addObstacle (4,9) game6
+game8 = addObstacle (3,5) game7
+game9 = addObstacle (2,5) game8
+game10 = addObstacle (5,5) game9
+game11 = addObstacle (6,5) game10
+game12 = addObstacle (7,5) game11
+game13 = addObstacle (8,5) game12
+game14 = addHunter (7,1) game13
+game15 = addTarget goNorth (7,6) game14
+game16 = addGateway ((3,1),(5,9)) game15
+game17 = addTarget goSouth (1,9) game16
+game18 = moveTargets game17
+game19 = moveTargets game18
+game20 = moveTargets game19
+game21 = moveTargets game20
+game22 = moveTargets game21
